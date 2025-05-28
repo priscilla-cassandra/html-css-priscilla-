@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Global styles*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------------Home page--------------------*/
+
+/*Header Navigation*/
+.header {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.navigation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 7rem;
+  margin: 0;
+  padding: 0;
+}
+.shop-men {
+  text-decoration: none;
+  color: black;
+}
+.nav-list :hover {
+  text-decoration: underline;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+
+.nav-icon {
+  justify-content: flex-end;
+}
+
+/*Hero image home page*/
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+}
+.hero-content h2 {
+  font-size: 2.8rem;
+}
+
+.shop {
+  display: inline-block;
+}
+
+.shop-button {
+  background-color: #bfe1ea;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.shop-button:hover {
+  /*font-size: 2rem;*/
+  opacity: 50%;
+}
+
+/*Popular products*/
+
+.h1-popular-products {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+.popular-products {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.popular-products img {
+  height: auto;
+  max-width: 70%;
+  background-color: #ebebeb;
+}
+
+/*Breadcrumbs navigation*/
+.breadcrumbs {
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: ">";
+  margin: 0 0.5rem;
+  color: #aaa;
+}
+
+.breadcrumbs li[aria-current="page"] {
+  font-weight: bold;
+}
+
+/*--------------------Product page--------------------*/
+
+/*Banner on the product page*/
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  font-family: DM sans;
+  font-weight: 700;
+}
+h2,
+h3 {
+  font-family: Albert sans;
+  font-weight: 600;
+}
+/*Changed body text font from microsoft sans serif to Arial, Helvetica, sans-serif*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Forms*/
+input,
+select,
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0.6rem;
+  padding-right: 2rem;
+}
+
+.form-container {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.form-container > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms {
+  text-decoration: underline;
+}
+
+/*Buttons*/
+
+.pay {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/*Footer*/
+footer {
+  background-color: #0a3641;
+  color: white;
+  padding: 1rem 2rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.socials i {
+  font-size: 23px;
+  margin: 0.9rem;
+}
+.socials :hover {
+  opacity: 50%;
+}
+.footer-nav {
+  display: flex;
+  list-style: none;
+  font-size: 1.1rem;
+  gap: 8rem;
+}
+.footer-nav :hover {
+  text-decoration: underline;
+}
+.form input[type="email"] {
+  padding: 0.4rem;
+  padding-right: 10rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid #ccc;
+  margin-right: 0.5rem;
+}
+.form button {
+  background-color: #bfe1ea;
+  padding: 0.2rem 1.3rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}

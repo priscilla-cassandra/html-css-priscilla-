@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    >
+    <title>Document</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html"
+              ><img
+                src="Images/RainyDays_Logo.png"
+                alt="Rainydays logo and home page navigation"
+                class="logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="form-container">
+      <form method="post">
+        <h3>Contact information</h3>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <input type="checkbox" name="yes" value="yes" id="yes" />
+        <label for="yes"
+          >Yes, I would like to recieve exclusive offers and news via
+          e-mail</label
+        >
+      </form>
+      <h3>Delivery</h3>
+      <form method="post">
+        <label for="first name">First name</label>
+        <input type="text" id="text" name="text" />
+        <label for="last name">Last name</label>
+        <input type="text" id="text" name="text" />
+        <label for="adress">Adress</label>
+        <input type="text" id="text" name="text" />
+        <label for="postal code">Postal code</label>
+        <input type="number" id="number" name="number" />
+        <label for="city">City</label>
+        <input type="text" id="text" name="text" />
+        <label for="phone number">Phone number</label>
+        <input type="text" id="text" name="text" />
+      </form>
+      <h3>Shipping</h3>
+      <form method="post">
+        <input
+          type="radio"
+          name="shipping method"
+          value="express"
+          id="express"
+        />
+        <label for="express">Express (1-2 days) <span>+$12.99</span></label>
+        <input
+          type="radio"
+          name="shipping method"
+          value="economy"
+          id="economy"
+        />
+        <label for="economy">Economy (3-5 days) <span>+$7.99</span></label>
+        <input
+          type="radio"
+          name="shipping method"
+          value="regular"
+          id="regular"
+        />
+        <label for="regular">Regular (7-10 days) <span>FREE</span></label>
+      </form>
+      <h3>Payment details</h3>
+      <form method="post">
+        <label for="card number">Card number</label>
+        <input type="number" id="number" name="number" />
+        <label for="expiration date">Expiration date</label>
+        <input type="text" id="text" name="text" />
+        <label for="security code">Security code</label>
+        <input type="number" id="number" name="number" />
+        <label for="name">Name on card</label>
+        <input type="text" id="text" name="text" />
+        <input type="checkbox" name="read" value="read" id="read" />
+        <label for="read"
+          >I have read, and agreed to the
+          <span class="terms">Terms and conditions</span></label
+        >
+        <a class="pay" href="Payment-in-progress.html">Pay now</a>
+      </form>
+    </main>
+  </body>
+</html>
