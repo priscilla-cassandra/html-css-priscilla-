@@ -55,11 +55,17 @@
     </header>
     <main>
       <section class="hero">
-        <img
+        <!--<img
           class="hero-image"
           src="Images/chris-henry-tjm8_mm4jfc-unsplash.jpg"
           alt="Lake sorrounded by mountains in hazy weather"
-        />
+        />-->
+        <video autoplay loop muted id="background-video">
+          <source
+            src="Video/15420938-uhd_3840_2160_30fps.mp4"
+            type="video/mp4"
+          />
+        </video>
         <div class="hero-content">
           <h1>Pushing the comfort zone</h1>
           <h2>Take your adventures to the next level</h2>
@@ -71,17 +77,21 @@
       </section>
       <h1 class="h1-popular-products">Popular products</h1>
       <section class="popular-products">
-        <div>
-          <img src="Images/RainyDays_Darwin-Photoroom.png" />
+        <div class="product-card">
+          <a href="Darwin-jacket.html"
+            ><img
+              src="Images/RainyDays_Darwin-Photoroom2.png"
+              alt="Darwin-jacket, grey color"
+          /></a>
           <h3>Darwin Jacket</h3>
           <p>$99.99</p>
         </div>
-        <div>
-          <img src="Images/RainyDays_Bolt-Photoroom.png" />
+        <div class="product-card">
+          <img src="Images/RainyDays_Bolt-Photoroom2.png" />
           <h3>Bolt Jacket</h3>
           <p>$79.99</p>
         </div>
-        <div>
+        <div class="product-card">
           <img src="Images/RainyDays_Fern-Photoroom.png" />
           <h3>Fern Jacket</h3>
           <p>$69.99</p>

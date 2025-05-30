@@ -8,6 +8,10 @@ body {
   box-sizing: border-box;
 }
 
+.product-card :hover {
+  opacity: 90%;
+}
+
 /*--------------------Home page--------------------*/
 
 /*Header Navigation*/
@@ -17,6 +21,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+}
+hr {
+  border-color: #bfe1ea;
 }
 
 .logo {
@@ -60,7 +67,7 @@ body {
 
 /*Hero image home page*/
 
-.hero {
+/*.hero {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -71,6 +78,18 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
+}*/
+
+.hero {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.hero > video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-content {
@@ -92,7 +111,8 @@ body {
 }
 
 .shop {
-  display: inline-block;
+  display: flex;
+  margin-top: 15rem;
 }
 
 .shop-button {
@@ -102,6 +122,8 @@ body {
   color: black;
   border-radius: 10px;
   font-size: 1.5rem;
+  flex: 1;
+  text-align: center;
   margin: 2rem;
 }
 
@@ -115,18 +137,41 @@ body {
 .h1-popular-products {
   text-align: center;
   margin-top: 6rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
+  font-size: 2.5rem;
 }
 .popular-products {
   display: flex;
-  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   text-align: center;
 }
 
+.products img {
+  height: auto;
+  max-width: 60%;
+}
+
+.product-card {
+  background-color: #f5f5f5;
+  margin: 2rem;
+  padding-top: 2rem;
+}
+
+.product-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.product-card p {
+  font-size: 1.8rem;
+}
 .popular-products img {
   height: auto;
-  max-width: 70%;
-  background-color: #ebebeb;
+  max-width: 60%;
 }
 
 /*Breadcrumbs navigation*/
@@ -189,6 +234,69 @@ h3 {
   font-family: Albert sans;
   font-weight: 600;
 }
+
+/*--------------------Darwin Jacket product page--------------------*/
+
+.product-specific {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.darwin-product img {
+  height: auto;
+  max-width: 80%;
+  background-color: #f5f5f5;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.product-content {
+  margin-right: 10rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-rows: 15.5rem 8rem 3rem;
+}
+
+.sizes {
+  gap: 2rem;
+}
+
+.sizes button {
+  padding: 1rem;
+  margin: 0.2rem;
+  flex: 1;
+  text-transform: uppercase;
+  width: 14%;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.sizes button:hover {
+  background-color: #bfe1ea;
+}
+
+.add-to-cart {
+  display: flex;
+}
+
+.add-to-cart label {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  max-width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.add-to-cart label:hover {
+  opacity: 70%;
+}
+
 /*Changed body text font from microsoft sans serif to Arial, Helvetica, sans-serif*/
 
 body {
