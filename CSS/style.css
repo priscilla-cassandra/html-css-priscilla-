@@ -241,23 +241,30 @@ h3 {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
+  max-width: 90%;
+  justify-self: center;
+}
+
+.darwin-product {
+  max-width: ;
 }
 
 .darwin-product img {
   height: auto;
-  max-width: 80%;
+  max-width: 70%;
   background-color: #f5f5f5;
   margin-left: 6rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .product-content {
-  margin-right: 10rem;
+  margin-right: 5rem;
   margin-top: 2rem;
   display: grid;
   grid-gap: 2rem;
   grid-template-rows: 15.5rem 8rem 3rem;
+  max-width: 60%;
 }
 
 .sizes {
@@ -288,7 +295,7 @@ h3 {
   text-decoration: none;
   padding: 1rem 4rem;
   text-transform: uppercase;
-  max-width: 100%;
+  max-width: 75%;
   flex: 1;
   text-align: center;
 }
@@ -302,8 +309,13 @@ h3 {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*--------------------Payment page--------------------*/
+.payment-page {
+  display: flex;
+  flex: 1;
+}
 /*Forms*/
+
 input,
 select,
 textarea {
@@ -312,13 +324,15 @@ textarea {
   padding-right: 2rem;
 }
 
-.form-container {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
+.contact-information {
+  display: grid;
 }
-.form-container > * {
-  flex: 1;
+
+fieldset {
+  display: grid;
+}
+
+.shipping {
   display: flex;
   flex-direction: column;
 }
