@@ -6,6 +6,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .product-card :hover {
@@ -149,6 +160,7 @@ hr {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   text-align: center;
+  margin: 0 4rem 4rem 4rem;
 }
 
 .products img {
@@ -197,7 +209,11 @@ hr {
 .breadcrumbs li[aria-current="page"] {
   font-weight: bold;
 }
-
+.breadcrumbs a {
+  text-decoration: none;
+  color: black;
+  opacity: 70%;
+}
 /*--------------------Product page--------------------*/
 
 /*Banner on the product page*/
@@ -242,11 +258,22 @@ h3 {
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
   max-width: 90%;
-  justify-self: center;
+  align-self: center;
 }
 
 .darwin-product {
   max-width: ;
+}
+
+.product-description h1 {
+  font-size: 3rem;
+}
+.product-description h2 {
+  font-size: 2.2rem;
+}
+
+.product-description p {
+  font-size: 1.4rem;
 }
 
 .darwin-product img {
@@ -259,7 +286,6 @@ h3 {
 }
 
 .product-content {
-  margin-right: 5rem;
   margin-top: 2rem;
   display: grid;
   grid-gap: 2rem;
@@ -310,10 +336,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 /*--------------------Payment page--------------------*/
-.payment-page {
-  display: flex;
-  flex: 1;
+
+.payment-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  height: auto;
 }
+
+.delivery input[type="text"] {
+  width: 50%;
+}
+
+.cart-content {
+  background-color: #f5f5f5;
+}
+.darwin-product2 img {
+  max-width: 60%;
+  height: auto;
+}
+
 /*Forms*/
 
 input,
@@ -330,6 +372,11 @@ textarea {
 
 fieldset {
   display: grid;
+  /*border: none;*/
+}
+legend {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .shipping {
@@ -339,6 +386,25 @@ fieldset {
 
 .terms {
   text-decoration: underline;
+}
+
+/*--------------------Payment successful--------------------*/
+
+.payment-successful {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.payment-successful p {
+  font-size: 1.2rem;
+}
+.payment-successful i {
+  font-size: 4rem;
+  color: #0a3641;
 }
 
 /*Buttons*/

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    >
     <title>Document</title>
     <link href="CSS/style.css" rel="stylesheet" />
     <link rel="stylesheet" />
@@ -23,76 +22,83 @@
         </ul>
       </nav>
     </header>
-    <hr />
     <main>
-      <form class="payment-form">
-        <fieldset class="contact-information">
-          <h3>Contact information</h3>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-          <input type="checkbox" name="yes" value="yes" id="yes">
-          <label for="yes">Yes, I would like to recieve exclusive offers and news via e-mail</label>
-        </fieldset>
-        <fieldset class="delivery">
-          <h3>Delivery</h3>
-          <label for="first-name">First name</label>
-          <input type="text" id="first-name" name="first-name">
-          <label for="last name">Last name</label>
-          <input type="text" id="last-name" name="last-name" />
-          <label for="adress">Adress</label>
-          <input type="text" id="adress" name="adress" />
-          <label for="postal code">Postal code</label>
-          <input type="number" id="postal-code" name="postal-code" />
-          <label for="city">City</label>
-          <input type="text" id="city" name="city"/>
-          <label for="phone number">Phone number</label>
-          <input type="text" id="phone-number" name="phone-number" />
-        </fieldset>
-        <fieldset class="shipping">
-          <h3>Shipping</h3>
-          <input type="radio" name="radio" value="express" id="express">
-          <label for="express">Express (1-2 days) <span>+$12.99</span></label>
-          <input type="radio" name="radio" value="economy" id="economy"/>
-          <label for="economy">Economy (3-5 days) <span>+$7.99</span></label>
-          <input type="radio" name="radio" value="regular" id="regular"/>
-          <label for="regular">Regular (7-10 days) <span>FREE</span></label>
-        </fieldset>
-        <fieldset class="payment-details">
-          <h3>Payment details</h3>
-        <form class="payment-details" method="post">
-          <label for="card number">Card number</label>
-          <input type="number" id="number" name="number" />
-          <label for="expiration date">Expiration date</label>
-          <input type="text" id="text" name="text" />
-          <label for="security code">Security code</label>
-          <input type="number" id="number" name="number" />
-          <label for="name">Name on card</label>
-          <input type="text" id="text" name="text" />
-          <input type="checkbox" name="read" value="read" id="read" />
-          <label for="read">I have read, and agreed to the<span class="terms">Terms and conditions</span></label>
-          <a class="pay" href="Payment-in-progress.html">Pay now</a>
-        </fieldset>
-      </form>
-      <div class="cart-content">
-        <div class="darwin-product2">
-          <img src="Images/RainyDays_Darwin-Photoroom2.png" />
-        </div>
-        <div class="product-content2">
-          <div class="p1-product-content">
-            <h3>Darwin jacket</h3>
-            <p>$99.99</p>
+      <div class="payment-page-container">
+        <form class="payment-form">
+          <fieldset class="contact-information">
+            <legend>Contact information</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <input type="checkbox" name="yes" value="yes" id="yes" />
+            <label for="yes"
+              >Yes, I would like to recieve exclusive offers and news via
+              e-mail</label
+            >
+          </fieldset>
+          <fieldset class="delivery">
+            <legend>Delivery</legend>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" />
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" />
+            <label for="adress">Adress</label>
+            <input type="text" id="adress" name="adress" />
+            <label for="postal-code">Postal code</label>
+            <input type="number" id="postal-code" name="postal-code" />
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" />
+            <label for="phone-number">Phone number</label>
+            <input type="text" id="phone-number" name="phone-number" />
+          </fieldset>
+          <fieldset class="shipping">
+            <legend>Shipping</legend>
+            <input type="radio" name="radio" value="express" id="express" />
+            <label for="express">Express (1-2 days) <span>+$12.99</span></label>
+            <input type="radio" name="radio" value="economy" id="economy" />
+            <label for="economy">Economy (3-5 days) <span>+$7.99</span></label>
+            <input type="radio" name="radio" value="regular" id="regular" />
+            <label for="regular">Regular (7-10 days) <span>FREE</span></label>
+          </fieldset>
+          <fieldset class="payment-details">
+            <legend>Payment details</legend>
+            <label for="card-number">Card number</label>
+            <input type="text" id="card-number" name="card-number" />
+            <label for="expiration-date">Expiration date</label>
+            <input type="text" id="expiration-date" name="expiration-date" />
+            <label for="security-code">Security code</label>
+            <input type="number" id="security-code" name="security-code" />
+            <label for="card-name">Name on card</label>
+            <input type="text" id="card-name" name="card-name" />
+            <input type="checkbox" name="read" value="read" id="read" />
+            <label for="read"
+              >I have read, and agreed to the<span class="terms"
+                >Terms and conditions</span
+              ></label
+            >
+            <a class="pay" href="Payment-successful.html">Pay now</a>
+          </fieldset>
+        </form>
+        <div class="cart-content">
+          <div class="darwin-product2">
+            <img src="Images/RainyDays_Darwin-Photoroom2.png" />
           </div>
-          <div class="p2-qty-size">
-            <p>Size: L</p>
-            <p>Qty: 1</p>
+          <div class="product-content2">
+            <div class="p1-product-content">
+              <h3>Darwin jacket</h3>
+              <p>$99.99</p>
+            </div>
+            <div class="p2-qty-size">
+              <p>Size: L</p>
+              <p>Qty: 1</p>
+            </div>
           </div>
-        </div>
-        <div class="discount-code">
-          <form>
-            <label for="discount-code">Discount code</label>
-            <input type="text" id="text" name="text" />
-          </form>
-          <button>Apply</button>
+          <div class="discount-code">
+            <form>
+              <label for="discount-code">Discount code</label>
+              <input type="text" id="discount-code" name="discount-code" />
+            </form>
+            <button>Apply</button>
+          </div>
         </div>
       </div>
     </main>
