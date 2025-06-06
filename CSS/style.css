@@ -65,6 +65,10 @@ hr {
   text-decoration: underline;
 }
 
+.close-button {
+  display: none;
+}
+
 .nav-icon {
   display: flex;
   gap: 2rem;
@@ -76,20 +80,21 @@ hr {
   justify-content: flex-end;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 /*Hero image home page*/
 
 /*.hero {
   position: relative;
   width: 100%;
   overflow: hidden;
-}
+}*/
 
 .hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}*/
+  display: none;
+}
 
 .hero {
   height: auto;
@@ -139,7 +144,6 @@ hr {
 }
 
 .shop-button:hover {
-  /*font-size: 2rem;*/
   opacity: 50%;
 }
 
@@ -220,6 +224,7 @@ hr {
 .breadcrumbs a:hover {
   text-decoration: underline;
 }
+
 /*--------------------Product page--------------------*/
 
 /*Banner on the product page*/
@@ -364,7 +369,7 @@ body {
 .cart-page {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 50%;
   margin: 0 auto;
 }
 
@@ -461,6 +466,10 @@ input[type="number"] {
   max-width: 100%;
 }
 
+.payment-form input {
+  margin-left: 0;
+}
+
 .form-group {
   margin-bottom: 0;
 }
@@ -525,7 +534,7 @@ legend {
   text-decoration: none;
   text-align: center;
   padding: 0.5rem 2rem;
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
   max-width: 80%;
 }
 
@@ -571,7 +580,7 @@ legend {
 
 .discount-code {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   align-items: center;
   margin-left: 1rem;
@@ -687,4 +696,599 @@ footer {
   width: 100%;
   box-sizing: border-box;
   align-items: center;
+}
+
+/*--------------------Media queries--------------------*/
+
+/*Fluid breakpoints*/
+
+@media (max-width: 1138px) {
+  .footer-nav {
+    gap: 5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1385px) {
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .footer-nav {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 1385px) {
+  .nav-list {
+    gap: 4rem;
+  }
+  .shop {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 1434px) {
+  .sizes button {
+    width: 12%;
+    padding: 0.8rem;
+  }
+  .product-description h1 {
+    font-size: 2rem;
+  }
+
+  .product-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-description p {
+    font-size: 1.2rem;
+  }
+
+  .product-content {
+    grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 1650px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content h2 {
+    font-size: 2.1rem;
+  }
+
+  .shop-button {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (min-width: 554px) and (max-width: 768px) {
+  .add-to-cart {
+    margin-bottom: 1rem;
+  }
+  .product-specific {
+    width: 70%;
+  }
+}
+
+/*Large desktop*/
+
+/*Small desktop*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /*Header*/
+  .breadcrumbs {
+    font-size: 1rem;
+  }
+
+  .logo {
+    max-width: 10rem;
+  }
+
+  .nav-list {
+    font-size: 1rem;
+    gap: 2.5rem;
+  }
+  .nav-icon {
+    font-size: 1rem;
+    gap: 1.5rem;
+    padding-right: 0;
+  }
+  /*Main page*/
+  .hero-content {
+    top: 50%;
+    width: 100%;
+  }
+
+  .shop {
+    margin-top: 3rem;
+  }
+
+  .h1-popular-products {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  /*Product page*/
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .product-card {
+    margin: 0.8rem;
+  }
+
+  .product-card h3,
+  .product-card p {
+    font-size: 1.4rem;
+  }
+
+  /*Darwin jacket*/
+  .product-specific {
+    grid-gap: 0.5rem;
+  }
+  .product-content {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 80%;
+  }
+
+  /*Cart page*/
+  .cart-page {
+    max-width: 60%;
+  }
+  .cart-badge {
+    position: absolute;
+    font-size: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    right: 1.2rem;
+    top: 4.1rem;
+  }
+
+  /*Payment page*/
+  .payment-page-container {
+    max-width: 100%;
+    margin: 1rem 1rem;
+    gap: 1rem;
+  }
+  .pay {
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  /*Footer*/
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+  .socials {
+    display: flex;
+  }
+
+  .footer-nav {
+    font-size: 1rem;
+    gap: 0.8rem;
+    padding: 0;
+  }
+
+  .form p {
+    text-align: center;
+  }
+}
+
+/*Mobile phone and tablets*/
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+  }
+  .header > a {
+    order: 1;
+    flex: 1;
+  }
+
+  .nav-icon {
+    justify-content: flex-end;
+    order: 2;
+  }
+
+  .hamburger-icon {
+    order: 3;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    z-index: 999;
+  }
+  #hamburger-menu:checked ~ .navigation {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bfe1ea;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .close-button {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+  /*Product-page*/
+
+  .banner-content h2 {
+    display: none;
+  }
+
+  .banner-content h1 {
+    font-size: 1rem;
+  }
+
+  .products {
+    grid-template-columns: 50% 50%;
+    margin: 0.5rem;
+  }
+
+  .product-card {
+    margin: 0.5rem;
+  }
+
+  .product-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 1.1rem;
+  }
+
+  /*Darwin product*/
+
+  .product-specific {
+    grid-template-columns: auto;
+    align-content: center;
+    grid-gap: 0;
+  }
+
+  .darwin-product img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-content {
+    max-width: 100%;
+    margin-top: 0;
+    grid-gap: 0;
+    grid-template-rows: 1fr 0.6fr 0.3fr;
+  }
+
+  .product-description h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .product-description h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .product-description p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .sizes {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 1rem;
+  }
+
+  .sizes h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sizes button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  /*Payment page*/
+
+  .payment-page-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    margin: 1rem 1rem;
+  }
+
+  .payment-form,
+  .cart-summary {
+    width: 100%;
+  }
+
+  .yes-check,
+  .terms-and-conditions {
+    display: flex;
+    font-size: 0.9rem;
+  }
+
+  .yes-check input,
+  .terms-and-conditions input {
+    margin-top: 0;
+  }
+
+  .payment-form input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .payment-form input {
+    margin-left: 0;
+  }
+
+  .pay {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .cart-summary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .discount-code {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 0;
+    gap: 1rem;
+  }
+
+  .discount-code input {
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .darwin-summary {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+  }
+
+  /*Footer*/
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+  .socials {
+    display: flex;
+  }
+
+  .footer-nav {
+    font-size: 1rem;
+    gap: 0.8rem;
+    padding: 0;
+  }
+
+  .form p {
+    text-align: center;
+  }
+}
+
+/*Tablets*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /*Home-page*/
+
+  .logo {
+    max-width: 15rem;
+  }
+
+  .nav-icon,
+  .hamburger-icon {
+    font-size: 1.5rem;
+  }
+
+  .nav-icon {
+    gap: 1rem;
+    padding-right: 0.7rem;
+  }
+
+  .breadcrumbs {
+    font-size: 0.8rem;
+  }
+
+  video {
+    display: none;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    top: 40%;
+    width: 100%;
+  }
+
+  .shop {
+    margin-top: 3rem;
+  }
+
+  .shop-button {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    margin: 0.5rem;
+  }
+
+  .h1-popular-products {
+    font-size: 2.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .popular-products {
+    flex-direction: column;
+  }
+
+  /*Cart-page*/
+
+  .cart-page {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+/*Mobile phones*/
+
+@media (max-width: 480px) {
+  /*Home page*/
+
+  .logo {
+    max-width: 8rem;
+  }
+
+  .nav-icon,
+  .hamburger-icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-icon {
+    gap: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .breadcrumbs {
+    font-size: 0.8rem;
+  }
+
+  video {
+    display: none;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    top: 50%;
+    width: 100%;
+  }
+
+  .shop {
+    margin-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-button {
+    width: 60%;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    margin: 0.3rem;
+  }
+
+  .h1-popular-products {
+    font-size: 2.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .popular-products {
+    flex-direction: column;
+  }
+
+  /*Product-page*/
+
+  .banner-content {
+    width: 45%;
+  }
+
+  .banner-content h1 {
+    font-size: 0.7rem;
+  }
+
+  /*Cart page*/
+
+  .cart-page {
+    max-width: 100%;
+  }
+
+  .cart-badge {
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .cart-items {
+    margin-top: 1rem;
+  }
+
+  .cart-total {
+    margin-top: 3rem;
+  }
+
+  .h3-darwin p {
+    margin-bottom: 0;
+  }
+
+  .h3-darwin h3 {
+    margin-top: 0.5rem;
+  }
+
+  /*Payment successful*/
+
+  .payment-successful {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

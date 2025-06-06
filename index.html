@@ -41,7 +41,12 @@
           alt="Rainydays logo and home page navigation"
           class="logo"
       /></a>
+      <input type="checkbox" id="hamburger-menu" />
+      <label for="hamburger-menu" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav class="navigation">
+        <label for="hamburger-menu" class="close-button">&times;</label>
         <ul class="nav-list">
           <li>About us</li>
           <li>Sustainability</li>
@@ -67,6 +72,11 @@
             alt="Lake sorrounded by mountains in hazy weather"
           />
         </video>
+        <img
+          class="hero-image"
+          src="Images/rainy-days-background.jpg"
+          alt="Lake sorrounded by mountains in hazy weather"
+        />
         <div class="hero-content">
           <h1>Pushing the comfort zone</h1>
           <h2>Take your adventures to the next level</h2>
@@ -115,7 +125,7 @@
         </div>
         <nav class="navigation-footer">
           <ul class="footer-nav">
-            <li>Contact us</li>
+            <li>Contact</li>
             <li>Shipping and return</li>
             <li>Help</li>
           </ul>
@@ -127,7 +137,7 @@
               type="email"
               id="email"
               name="email"
-              placeholder="@ email address"
+              placeholder="@ email adress"
               required
             />
             <button>Sign up</button>
