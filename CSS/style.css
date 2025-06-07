@@ -450,6 +450,10 @@ textarea {
   padding-right: 2rem;
 }
 
+.payment-form label {
+  /*display: none;*/
+}
+
 .payment-form {
   width: 100%;
   box-sizing: border-box;
