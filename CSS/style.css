@@ -127,10 +127,12 @@ main {
 .hero-content h1 {
   font-size: 4rem;
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 .hero-content h2 {
   font-size: 2.8rem;
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 .shop {
@@ -257,6 +259,8 @@ main {
   text-align: center;
   padding: 1rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 h1 {
@@ -870,7 +874,7 @@ footer {
   /*Main page*/
   .hero-content {
     top: 50%;
-    width: 100%;
+    width: 70%;
   }
 
   .shop {
@@ -1201,15 +1205,15 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .hero-content h2 {
     font-size: 1.5rem;
   }
 
   .hero-content {
-    top: 40%;
-    width: 100%;
+    top: 45%;
+    width: 80%;
   }
 
   .shop {
@@ -1289,7 +1293,7 @@ footer {
 
   .hero-content {
     top: 50%;
-    width: 100%;
+    width: 80%;
   }
 
   .shop {
