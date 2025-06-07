@@ -450,10 +450,6 @@ textarea {
   padding-right: 2rem;
 }
 
-.payment-form label {
-  display: none;
-}
-
 .payment-form {
   width: 100%;
   box-sizing: border-box;
@@ -475,7 +471,8 @@ input[type="number"] {
   padding: 0.8rem 1rem;
   border: 1px solid #ddd;
   border-radius: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.3rem;
 }
 
 .payment-form input,
@@ -516,8 +513,9 @@ fieldset {
 }
 
 legend {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .shipping {
