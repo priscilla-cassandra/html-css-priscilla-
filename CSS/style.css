@@ -451,7 +451,7 @@ textarea {
 }
 
 .payment-form label {
-  /*display: none;*/
+  display: none;
 }
 
 .payment-form {
