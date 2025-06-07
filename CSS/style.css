@@ -6,12 +6,15 @@
   box-sizing: border-box;
 }
 
+/*Changed body text font from microsoft sans serif to Arial, Helvetica, sans-serif*/
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .with-header-liner .header {
@@ -31,7 +34,13 @@ main {
   opacity: 90%;
 }
 
-/*----------------------------Home page----------------------------*/
+.check-out a:hover,
+.pay a:hover,
+.add-to-cart a:hover {
+  opacity: 70%;
+}
+
+/*------------------------------------Home page------------------------------------*/
 
 /*Header Navigation*/
 .header {
@@ -177,11 +186,6 @@ main {
   margin: 0 4rem 4rem 4rem;
 }
 
-.products img {
-  height: auto;
-  max-width: 60%;
-}
-
 .product-card {
   background-color: #f5f5f5;
   margin: 2rem;
@@ -195,7 +199,8 @@ main {
 .product-card p {
   font-size: 1.8rem;
 }
-.popular-products img {
+.popular-products img,
+.products img {
   height: auto;
   max-width: 60%;
 }
@@ -234,7 +239,7 @@ main {
   text-decoration: underline;
 }
 
-/*----------------------------Product page----------------------------*/
+/*------------------------------------Product page------------------------------------*/
 
 /*Banner on the product page*/
 .banner {
@@ -273,24 +278,7 @@ h3 {
   font-weight: 600;
 }
 
-/*----------------------------Darwin Jacket product page----------------------------*/
-
-.cart-badge {
-  position: absolute;
-  background-color: #bfe1ea;
-  color: black;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  border-radius: 50%;
-  width: 1.2rem;
-  height: 1.2rem;
-  right: 3.4rem;
-}
-
-.shopping-cart-link {
-  color: black;
-}
+/*------------------------------------Darwin Jacket product page------------------------------------*/
 
 .product-specific {
   display: grid;
@@ -360,17 +348,20 @@ h3 {
   text-align: center;
 }
 
-.add-to-cart a:hover {
-  opacity: 70%;
+/*--------------------------------------Cart page--------------------------------------*/
+
+.cart-badge {
+  position: absolute;
+  background-color: #bfe1ea;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  right: 3.4rem;
 }
-
-/*Changed body text font from microsoft sans serif to Arial, Helvetica, sans-serif*/
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*----------------------------Cart page----------------------------*/
 
 .cart-page h1 {
   margin-bottom: 4rem;
@@ -424,11 +415,7 @@ body {
   text-align: center;
 }
 
-.check-out a:hover {
-  opacity: 70%;
-}
-
-/*----------------------------Payment page----------------------------*/
+/*------------------------------------Payment page------------------------------------*/
 
 .payment-page-container {
   display: grid;
@@ -650,7 +637,7 @@ legend {
   font-weight: bold;
 }
 
-/*----------------------------Loading page---------------------------*/
+/*------------------------------------Loading page-----------------------------------*/
 
 .loading-container {
   display: flex;
@@ -710,7 +697,7 @@ legend {
   }
 }
 
-/*----------------------------Payment successful---------------------------*/
+/*------------------------------------Payment successful-----------------------------------*/
 
 .payment-successful {
   display: flex;
@@ -781,9 +768,9 @@ footer {
   align-items: center;
 }
 
-/*----------------------------Media queries----------------------------*/
+/*------------------------------------Media queries-----------------------------*/
 
-/*Fluid breakpoints*/
+/*-----Fluid breakpoints-----*/
 
 @media (max-width: 1138px) {
   .footer-nav {
@@ -857,7 +844,7 @@ footer {
   }
 }
 
-/*Small desktop*/
+/*-----Small desktop-----*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /*Header*/
@@ -965,7 +952,7 @@ footer {
   }
 }
 
-/*Mobile phone and tablets*/
+/*-----Mobile phone and tablets-----*/
 
 @media (max-width: 768px) {
   .header {
@@ -1177,7 +1164,7 @@ footer {
   }
 }
 
-/*Tablets*/
+/*-----Tablets-----*/
 
 @media (min-width: 481px) and (max-width: 768px) {
   /*Home-page*/
@@ -1257,7 +1244,7 @@ footer {
   }
 }
 
-/*Mobile phones*/
+/*-----Mobile phones-----*/
 
 @media (max-width: 480px) {
   /*Home page*/
