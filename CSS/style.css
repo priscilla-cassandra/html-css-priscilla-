@@ -31,7 +31,7 @@ main {
   opacity: 90%;
 }
 
-/*--------------------Home page--------------------*/
+/*----------------------------Home page----------------------------*/
 
 /*Header Navigation*/
 .header {
@@ -233,7 +233,7 @@ hr {
   text-decoration: underline;
 }
 
-/*--------------------Product page--------------------*/
+/*----------------------------Product page----------------------------*/
 
 /*Banner on the product page*/
 .banner {
@@ -270,7 +270,7 @@ h3 {
   font-weight: 600;
 }
 
-/*--------------------Darwin Jacket product page--------------------*/
+/*----------------------------Darwin Jacket product page----------------------------*/
 
 .cart-badge {
   position: absolute;
@@ -367,7 +367,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*--------------------Cart page--------------------*/
+/*----------------------------Cart page----------------------------*/
 
 .cart-page {
   display: flex;
@@ -420,7 +420,7 @@ body {
   opacity: 70%;
 }
 
-/*--------------------Payment page--------------------*/
+/*----------------------------Payment page----------------------------*/
 
 .payment-page-container {
   display: grid;
@@ -640,7 +640,66 @@ legend {
   font-weight: bold;
 }
 
-/*--------------------Payment successful--------------------*/
+/*----------------------------Loading page---------------------------*/
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.processing {
+  animation: text-loading 1.3s ease-in-out infinite alternate;
+}
+
+.loading-spinner {
+  aspect-ratio: 1;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  animation: rotate 1.3s ease-in-out infinite;
+}
+
+.spinner-sector-1,
+.spinner-sector-2 {
+  border-top-color: #0a3641;
+  border-bottom-color: #0a3641;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-loading {
+  0% {
+    color: rgba(0, 0, 0, 1);
+  }
+  50% {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/*----------------------------Payment successful---------------------------*/
 
 .payment-successful {
   display: flex;
@@ -712,7 +771,7 @@ footer {
   align-items: center;
 }
 
-/*--------------------Media queries--------------------*/
+/*----------------------------Media queries----------------------------*/
 
 /*Fluid breakpoints*/
 
@@ -787,8 +846,6 @@ footer {
     width: 70%;
   }
 }
-
-/*Large desktop*/
 
 /*Small desktop*/
 

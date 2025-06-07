@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="3;url=Payment-successful.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loading page waiting for payment to go through"
+    />
+    <title>Loading | Rainydays</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img
+          src="Images/RainyDays_Logo.png"
+          alt="Rainydays logo and home page navigation"
+          class="logo"
+      /></a>
+      <input type="checkbox" id="hamburger-menu" />
+      <label for="hamburger-menu" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav class="navigation">
+        <label for="hamburger-menu" class="close-button">&times;</label>
+        <ul class="nav-list">
+          <li>About us</li>
+          <li>Sustainability</li>
+          <a class="shop-men" href="product-page.html">Shop men</a>
+          <li>Shop women</li>
+        </ul>
+      </nav>
+      <div class="nav-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+      </div>
+    </header>
+    <main>
+      <div class="loading-container">
+        <h1 class="processing">Processing...</h1>
+        <div class="loading-spinner">
+          <div class="spinner spinner-sector-1"></div>
+          <div class="spinner spinner-sector-2"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <nav class="navigation-footer">
+          <ul class="footer-nav">
+            <li>Contact</li>
+            <li>Shipping and return</li>
+            <li>Help</li>
+          </ul>
+        </nav>
+        <div class="form">
+          <p>Join our newsletter for exclusive offers and news!</p>
+          <form class="footer-form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="@ email address"
+              required
+            />
+            <button>Sign up</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
