@@ -372,6 +372,11 @@ body {
 
 /*----------------------------Cart page----------------------------*/
 
+.cart-page h1 {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
 .cart-page {
   display: flex;
   flex-direction: column;
