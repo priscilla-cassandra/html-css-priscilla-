@@ -843,6 +843,12 @@ footer {
   }
 }
 
+@media (min-width: 769px) {
+  .hero-image {
+    display: none;
+  }
+}
+
 /*-----Small desktop-----*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1286,7 +1292,7 @@ footer {
 
   .hero-content {
     top: 50%;
-    width: 80%;
+    width: 90%;
   }
 
   .shop {
