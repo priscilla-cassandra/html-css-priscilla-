@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pay for yout Rainydays items by filling out your contact, addres, payment and shipping information."/>
+    <meta
+      name="description"
+      content="Pay for yout Rainydays items by filling out your contact, addres, payment and shipping information."
+    />
     <title>Payment | Rainydays</title>
     <link href="CSS/style.css" rel="stylesheet" />
     <link
@@ -14,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="with-header-liner" >
+  <body class="with-header-liner">
     <header class="header">
       <a href="index.html"
         ><img
@@ -41,16 +44,16 @@
       </div>
     </header>
     <nav aria-label="breadcrumbs">
-        <ol class="breadcrumbs">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li><a href="product-page.html">Men</a></li>
-          <li><a href="Darwin-jacket.html">Darwin Jacket</a></li>
-          <li><a href="Cart-page.html">Shopping Cart</a></li>
-          <li aria-current="page">Payment</li>
-        </ul>
-      </nav>
+      <ul class="breadcrumbs">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li><a href="product-page.html">Men</a></li>
+        <li><a href="Darwin-jacket.html">Darwin Jacket</a></li>
+        <li><a href="Cart-page.html">Shopping Cart</a></li>
+        <li aria-current="page">Payment</li>
+      </ul>
+    </nav>
     <main>
       <div class="payment-page-container">
         <form class="payment-form">
@@ -62,104 +65,164 @@
             </div>
             <div class="yes-check">
               <input type="checkbox" name="yes" value="yes" id="yes" />
-              <label for="yes">Yes, I would like to recieve exclusive offers and news via e-mail</label>
+              <label for="yes"
+                >Yes, I would like to recieve exclusive offers and news via
+                e-mail</label
+              >
             </div>
           </fieldset>
           <fieldset class="delivery">
             <legend>Delivery</legend>
             <div class="form-row">
               <div class="form-group">
-                <label for="first-name">First name</label> 
-                <input type="text" id="first-name" placeholder="First name" required/>
+                <label for="first-name">First name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  placeholder="First name"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="last-name">Last name</label>
-                <input type="text" id="last-name" placeholder="Last name" required/>
+                <input
+                  type="text"
+                  id="last-name"
+                  placeholder="Last name"
+                  required
+                />
               </div>
             </div>
             <div class="form-group">
               <label for="address">Address</label>
-              <input type="text" id="address" placeholder="Address" required/>
+              <input type="text" id="address" placeholder="Address" required />
             </div>
             <div class="form-row2">
               <div class="form-group">
                 <label for="postal-code">Postal code</label>
-                <input type="number" id="postal-code" placeholder="Postal code" required>
+                <input
+                  type="number"
+                  id="postal-code"
+                  placeholder="Postal code"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="city">City</label>
-                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="city" placeholder="City" required />
               </div>
             </div>
             <div class="form-group">
               <label for="phone-number">Phone number</label>
-              <input type="text" id="phone-number" placeholder="Phone number" required>
+              <input
+                type="text"
+                id="phone-number"
+                placeholder="Phone number"
+                required
+              />
             </div>
           </fieldset>
           <fieldset class="shipping">
             <legend>Shipping</legend>
             <div class="shipping-option">
               <input type="radio" name="radio" value="express" id="express" />
-              <label for="express">Express (1-2 days) <span class="extra">+$12.99</span></label>
+              <label for="express"
+                >Express (1-2 days) <span class="extra">+$12.99</span></label
+              >
             </div>
             <div class="shipping-option">
               <input type="radio" name="radio" value="economy" id="economy" />
-              <label for="economy">Economy (3-5 days) <span class="extra">+$7.99</span></label>
+              <label for="economy"
+                >Economy (3-5 days) <span class="extra">+$7.99</span></label
+              >
             </div>
-            <div class="shipping-option"> 
+            <div class="shipping-option">
               <input type="radio" name="radio" value="regular" id="regular" />
-              <label for="regular">Regular (7-10 days) <span class="extra">FREE</span></label>
+              <label for="regular"
+                >Regular (7-10 days) <span class="extra">FREE</span></label
+              >
             </div>
           </fieldset>
           <fieldset class="payment-details">
             <legend>Payment details</legend>
             <div class="form-group">
               <label for="card-number">Card number</label>
-              <input type="number" id="card-number" placeholder="Card number" required>
+              <input
+                type="number"
+                id="card-number"
+                placeholder="Card number"
+                required
+              />
             </div>
             <div class="form-row3">
               <div class="form-group">
                 <label for="expiration-date">Expiration date</label>
-                <input type="text" id="expiration-date" placeholder="Expiration date" required>
+                <input
+                  type="text"
+                  id="expiration-date"
+                  placeholder="Expiration date"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="security-code">Security code</label>
-                <input type="number" id="security-code" placeholder="Security code" required>
+                <input
+                  type="number"
+                  id="security-code"
+                  placeholder="Security code"
+                  required
+                />
               </div>
             </div>
             <div class="form-group">
               <label for="name-on-card">Name on card</label>
-              <input type="text" id="name-on-card" placeholder="Name on card" required>
+              <input
+                type="text"
+                id="name-on-card"
+                placeholder="Name on card"
+                required
+              />
             </div>
             <div class="terms-and-conditions">
-               <input type="checkbox" name="read" value="read" id="read" />
-              <label for="read">I have read, and agreed to the<span class="terms">Terms and conditions</span></label>
+              <input type="checkbox" name="read" value="read" id="read" />
+              <label for="read"
+                >I have read, and agreed to the<span class="terms"
+                  >Terms and conditions</span
+                ></label
+              >
             </div>
             <div class="pay">
               <a class="pay" href="loading.html">Pay now</a>
-            </div> 
+            </div>
           </fieldset>
         </form>
         <div class="cart-summary">
           <h1>Cart summary</h1>
           <div class="darwin-summary">
             <div class="darwin-product2">
-              <img src="Images/RainyDays_Darwin-200kb-mark.png" alt="Darwin-jacket, grey color, thicker fabric" />
+              <img
+                src="Images/RainyDays_Darwin-200kb-mark.png"
+                alt="Darwin-jacket, grey color, thicker fabric"
+              />
             </div>
             <div class="p1-product-content">
               <div class="h3-darwin">
                 <h3>Darwin jacket</h3>
-              <p>$99.99</p>
+                <p>$99.99</p>
               </div>
-              <span class="size-summary">
+              <div class="size-summary">
                 <p>Size: <span>L</span></p>
                 <p>Qty: <span>1</span></p>
-              </span>
+              </div>
             </div>
           </div>
           <div class="discount-code">
             <form>
-              <input type="text" placeholder="Discount code or giftcard" required/>
+              <input
+                type="text"
+                placeholder="Discount code or giftcard"
+                required
+              />
             </form>
             <button>Apply</button>
           </div>
