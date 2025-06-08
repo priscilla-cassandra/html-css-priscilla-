@@ -100,16 +100,6 @@ main {
 
 /*Hero image home page*/
 
-/*.hero {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}*/
-
-.hero-image {
-  display: none;
-}
-
 .hero {
   height: auto;
   width: 100%;
@@ -120,6 +110,13 @@ main {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+#background-video > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-content {
