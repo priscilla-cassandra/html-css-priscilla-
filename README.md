@@ -1,8 +1,9 @@
 # RainyDays
+The RainyDays project is a website for outdoor jackets that covers all outdoor activities in any type of weather. The project is a student course assignment meant to display HTML and CSS skills in web-development. The live site features mens outdoor jackets, and displays a users navigation from selecting one jacket (The Darwin Jacket), proceeding to checkout, and purchasing the product. 
 
 ## Built with
-HTML
-CSS
+- HTML
+- CSS
 
 ## Running the project
 The project can be viewed and run bu cloning the repo to VSCode
