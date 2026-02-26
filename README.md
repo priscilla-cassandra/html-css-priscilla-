@@ -15,6 +15,7 @@ The project can be viewed and run bu cloning the repo to VSCode
 5. When prompted, click "Open" to open the cloned repository in VS Code
 
 ## Link to live website
+https://priscilla-cassandra.github.io/html-css-priscilla-/
 
 
 ## Author
