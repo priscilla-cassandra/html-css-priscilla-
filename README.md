@@ -25,4 +25,4 @@ GitHub: priscilla-cassandra
 
 ## Contact
 priscilla-92@live.com<br>
-LinkedIn
+[LinkedIn](https://www.linkedin.com/in/priscilla-neeraas-379410145/)
